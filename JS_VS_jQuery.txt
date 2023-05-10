@@ -1,0 +1,149 @@
+----------------------------------------Выбор элемента по идентификатору--------------------------------------------------
+
+*****JS*****
+let myElement = document.getElementById("result");
+
+***jQuery***
+let myElement = $("#result");
+
+------------------------------------------Выбор элемента по названию тега--------------------------------------------------
+
+*****JS*****
+let myElement = document.getElementsByTagName("div");
+
+***jQuery***
+let myElement = $("div");
+
+-------------------------------------------------Выбор элемента по классу--------------------------------------------------
+
+*****JS*****
+let myElement = document.getElementsByClassName("result");
+
+***jQuery***
+let myElement = $(".result");
+
+-------------------------------------------------Выбор элемента по CSS селектору-------------------------------------------
+
+*****JS*****
+let myElement = document.querySelector("#result"); - для одного
+let myElement = document.querySelectorAll(".answers"); - для множества
+
+***jQuery***
+let myElement = $("любой селектор что были представлены выше");
+let myElement = $(".result");
+let myElement = $("div.result");
+let myElement = $("div.result > a");
+
+-------------------------------------------------Установить текст DOM элемента---------------------------------------------
+
+*****JS*****
+let jsElem = document.getElementById("js");
+//изменение текста
+jsElem.textContent = "Hello" или jsElem.innerText = "Hello"
+
+***jQuery***
+let jqElem = $("#jq");
+//изменение текста
+jqElem.text("Hello");
+
+----------------------------------------------------Получить текст DOM элемента--------------------------------------------
+
+*****JS*****
+let jsElem = document.getElementById("js");
+console.log(jsElem.textContent); или console.log(jsElem.innerText);
+
+***jQuery***
+let jqElem = $("#jq");
+console.log(jqElem.text());
+
+-------------------------------------------------Установить HTML для DOM элемента------------------------------------------
+
+*****JS*****
+let jsElem = document.getElementById("js");
+jsElem.innerHTML = "<p>Hello</p><br>"
+
+***jQuery***
+let jqElem = $("#jq");
+jqElem.html("<p>Hello</p>"); //в html появляется пораграф с текстов Hello
+
+-------------------------------------------------Извлечь HTML для DOM элемента--------------------------------------------
+
+*****JS*****
+let jsElem = document.getElementById("js");
+console.log(jsElem.innerHTML)
+
+***jQuery***
+let jqElem = $("#jq");
+console.log(jqElem.html());
+
+-------------------------------------------------Скрыть элемент на JS и jQ------------------------------------------------
+
+*****JS*****
+let jsElem = document.getElementById("js");
+jsElem.style.display = "none"; - скрыть
+jsElem.style.display = ""; - показать
+
+***jQuery***
+let jqElem = $("#jq");
+jqElem.hide(); - скрыть
+jqElem.show(); - показать
+  
+-----------------------------------------------Установка стилей через JS и jQ---------------------------------------------
+
+*****JS*****
+let jsElem = document.getElementById("js");
+jsElem.style.fontSize = "35px";
+jsElem.style.backgroundColor = "white";
+
+***jQuery***
+let jqElem = $("#jq");
+jqElem.css("font-size", "35px");
+jqElem.css("color", "white");
+
+------------------------------------------------Удалить элемент на JS и jQ------------------------------------------------
+
+*****JS*****
+let jsElem = document.getElementById("js");
+jsElem.parentNode.removeChild(jsElem);
+
+***jQuery***
+let jqElem = $("#jq");
+jqElem.remove();
+
+------------------------------------------------Родительский элемент------------------------------------------------------
+
+*****JS*****
+let jsElem = document.getElementById("js");
+console.log(jsElem.parentNode);
+
+***jQuery***
+let jqElem = $("#jq");
+console.log(jqElem.parent());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
